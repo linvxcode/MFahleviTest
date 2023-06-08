@@ -13,7 +13,7 @@ function Modal({ isOpen, onClose, addItem,error, newItem, setNewItem}) {
         {isOpen && (
           <motion.div className="modal backdrop-blur-[1px]">
             <motion.div
-              className="modal "
+              className="modal"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.5 }}
@@ -83,6 +83,7 @@ function Modal({ isOpen, onClose, addItem,error, newItem, setNewItem}) {
                   <div>
                     <label htmlFor="foto">Foto Barang:</label>
                     <input
+                    className=""
                       type="file"
                       id="foto"
                       accept="image/jpeg, image/png"
